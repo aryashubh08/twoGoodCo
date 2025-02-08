@@ -1,10 +1,10 @@
 @font-face {
   font-family: futura;
-  src: url(./Futura-Bold.ttf);
+  src: url(./fonts/Futura-Bold.ttf);
 }
 @font-face {
   font-family: helvetica;
-  src: url(./HelveticaNowText-Regular.ttf);
+  src: url(./fonts/HelveticaNowText-Regular.ttf);
 }
 * {
   margin: 0;
@@ -420,7 +420,7 @@ body {
   justify-content: center;
   padding: 1vw;
   gap: 2vw 1vw;
-  margin-top: 10vw;
+  margin-top: 20vw;
 }
 .left5 {
   width: 33%;
@@ -589,18 +589,26 @@ body {
 }
 @media (max-width: 600px) {
   .page-one h1 {
-    font-size: 14vw;
-    line-height: 14vw;
+    font-size: 20vw;
+    line-height: 18vw;
     letter-spacing: -2px;
   }
+  /* .nav-part1 svg {
+    width: 80px;
+  }
+  .nav-part2 svg {
+    width: 80px;
+  } */
   .page-one {
-    min-height: 70vh;
+    height: 40vh;
+    width: 100%;
     padding: 0 2.5vw;
     padding-top: 25vh;
+    /* background-color: red; */
   }
   .image-container {
     width: 100%;
-    height: 30vh;
+    height: 40vh;
     margin-top: 3vw;
   }
   .page-two {
@@ -614,9 +622,30 @@ body {
     flex-direction: column;
     /* background-color: red; */
   }
+  .card {
+    position: absolute;
+    width: 74.5%;
+
+    z-index: 8;
+    /* background-color: rgb(220, 239, 193); */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-family: helvetica;
+    padding: 1vw;
+    opacity: 0;
+    overflow: hidden;
+  }
   .page-two .elem {
     width: 100%;
-    height: 80vh;
+    height: 70vh;
     margin-bottom: 3vw;
   }
   .page-three {
