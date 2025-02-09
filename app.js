@@ -224,6 +224,12 @@ mm.add("(max-width:799px)", () => {
   }
   hoverCardAnimation();
 
+  //swiper
+  var swiper = new Swiper(".mySwiper", {
+    effect: "cards",
+    grabCursor: true,
+  });
+
   function navbarAnimation() {
     gsap.to(".nav-part1 svg", {
       transform: "translateY(-100%)",
